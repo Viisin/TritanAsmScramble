@@ -22,6 +22,11 @@ static void comment_replacing( std::string& original )
 	std::cout << "Replace single line comment [   Finished   ]." << std::endl ;
 
 	// not support multi comment
+	std::cout << "( Not support '*' and '/' in multi line comment currently )\n" ;
+	std::cout << "Replacing multi line comment...\r" ;
+	regexp_text = "\\/\\*[^(\\/\\*)]*?\\*\\/" ;
+	original = std::regex_replace( original , regexp_text , "" ) ;
+	std::cout << "Replace multi line comment [   Finished   ]." << std::endl ;
 }
 
 static void definition_replacing( std::string& original )
