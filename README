@@ -1,0 +1,4 @@
+
+Scramble tritan asm file tool for FDSP-IDE.
+
+FDSP-IDE build static library(object) tool will generate .asm to encrypted text file, it's not safe.
